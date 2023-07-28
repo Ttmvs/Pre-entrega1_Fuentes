@@ -6,7 +6,7 @@ function navbar() {
   return (
     <>
     <div>
-      <img src="{Stodak}"/>
+      <img src={Stodak}/>
     </div>
     <h1 className='container center-align'>Mi Tienda Online</h1>
     <  CartWidget/>
