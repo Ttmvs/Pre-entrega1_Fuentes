@@ -1,11 +1,15 @@
 import React from 'react'
 import CartWidget from "./CartWidget"
+import Stodak from "../Assets/logo.png"
 
 function navbar() {
   return (
     <>
-    <h1>Mi Tienda Online</h1>
-    < CartWidget/>
+    <div>
+      <img src="{Stodak}"/>
+    </div>
+    <h1 className='container center-align'>Mi Tienda Online</h1>
+    <  CartWidget/>
     </>
   )
 }

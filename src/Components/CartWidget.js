@@ -7,8 +7,10 @@ import Count from "./Count"
 function CartWidget() {
   return (
     <>
-    <ShoppingCartCheckoutOutlinedIcon/>
+    <div className='right-align'>
+    <ShoppingCartCheckoutOutlinedIcon fontSize='large' color='success' className='right-align'/>
     <Count/>
+    </div>
     </>
   )
 }
