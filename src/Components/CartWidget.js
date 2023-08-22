@@ -1,6 +1,6 @@
 import React from 'react'
 import ShoppingCartCheckoutOutlinedIcon from '@mui/icons-material/ShoppingCartCheckoutOutlined';
-import Count from "./Count"
+import ItemCount from "./ItemCount"
 
 
 
@@ -9,7 +9,7 @@ function CartWidget() {
     <>
     <div className='right-align'>
     <ShoppingCartCheckoutOutlinedIcon fontSize='large' color='success' className='right-align'/>
-    <Count/>
+    <ItemCount/>
     </div>
     </>
   )

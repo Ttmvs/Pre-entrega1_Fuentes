@@ -1,16 +1,28 @@
-import React from 'react'
-import NavBar from "./Components/NavBar"
-import ItemListContainer from "./Components/ItemListContainer"
-import "materialize-css/dist/css/materialize.min.css"
+import NavBar from './Components/NavBar';
+import './App.css';
+import ItemListContainer from './Components/ItemListContainer';
+import ItemDetailContainer from './Components/ItemDetailContainer';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+import CartWidget from './Components/CartWidget';
 
-function App() {
+const App = () => {
   return (
-    <>
-    <NavBar/>
-    <ItemListContainer/>
-    </>
-    
-  );
+    <BrowserRouter>
+    <NavBar />
+    <Routes>
+      <Route path="/" element={<ItemListContainer value='Bienvenido'/>} />
+      <Route path="/category/:categoryId" element={<ItemListContainer value='Bienvenido'/>} />
+      <Route path="/item/:itemId" element={<ItemDetailContainer/>} />
+      <Route path="/cart" element={<CartWidget/>} />
+    </Routes>
+    {/* <ItemListContainer value='Mensaje de prueba' />
+    <ItemDetailContainer/> */}
+    </BrowserRouter>
+  )
 }
 
 export default App;
